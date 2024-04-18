@@ -1,5 +1,7 @@
 # PhoenixJankenpon
 
+This is a simple project to run a [Rock-Paper-Scissor](https://fagocitandooplaneta.wordpress.com/2010/10/19/pedra-papel-tesoura-versao-nerd/) game
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
@@ -7,12 +9,17 @@ To start your Phoenix server:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-## Learn more
+## Endpoint
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+### GET /api/game
+access via query params
+
+eg: `/api/game?player1=scissors&player2=paper`
+
+valid options:
+- scissors
+- paper
+- stone
+- lizard
+- spock
